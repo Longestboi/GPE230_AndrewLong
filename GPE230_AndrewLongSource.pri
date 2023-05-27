@@ -14498,7 +14498,8 @@ SOURCES += \
 	"$$unrealRootPath/Engine/Plugins/VirtualProduction/TimedDataMonitor/Source/TimedDataMonitorEditor/Private/TimedDataMonitorEditorStyle.cpp" \
 	"$$unrealRootPath/Engine/Plugins/XGEController/Source/Private/XGEControllerModule.cpp" \
 	"$$GPE230_AndrewLongRootPath/Source/GPE230_AndrewLong/GPE230_AndrewLong.cpp" \
-	"$$GPE230_AndrewLongRootPath/Source/GPE230_AndrewLong/GPE230_AndrewLongCharacter.cpp" \
-	"$$GPE230_AndrewLongRootPath/Source/GPE230_AndrewLong/GPE230_AndrewLongGameMode.cpp" \
+	"$$GPE230_AndrewLongRootPath/Source/GPE230_AndrewLong/LockAndKey.cpp" \
+	"$$GPE230_AndrewLongRootPath/Source/GPE230_AndrewLong/MazeCharacter.cpp" \
+	"$$GPE230_AndrewLongRootPath/Source/GPE230_AndrewLong/MazeGameMode.cpp" \
  
 

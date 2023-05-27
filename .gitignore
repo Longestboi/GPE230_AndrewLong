@@ -2,6 +2,7 @@
 .vs/
 .vscode/
 .kdev4/
+**/.vscode/
 
 # Compiled Object files
 *.slo

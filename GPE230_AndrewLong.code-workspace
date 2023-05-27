@@ -3,6 +3,10 @@
 		{
 			"name": "GPE230_AndrewLong",
 			"path": "."
+		},
+		{
+			"name": "UE4",
+			"path": "/home/andrew/Documents/Unreal 4/UnrealEngine-4.27-plus"
 		}
 	],
 	"settings": {

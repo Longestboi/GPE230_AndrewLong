@@ -4,4 +4,3 @@
 #include "Modules/ModuleManager.h"
 
 IMPLEMENT_PRIMARY_GAME_MODULE( FDefaultGameModuleImpl, GPE230_AndrewLong, "GPE230_AndrewLong" );
- 

@@ -46,3 +46,7 @@ void AMazeCharacter::MoveRight(float value) {
 void AMazeCharacter::Turn(float value) {
 	AddControllerYawInput(value * turnSpeed);
 }
+
+void AMazeCharacter::Die() {
+	UE_LOG(LogTemp, Log, TEXT("Player is DEAD"));
+}

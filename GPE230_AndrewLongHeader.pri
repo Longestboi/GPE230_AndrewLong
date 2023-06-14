@@ -19050,6 +19050,7 @@ HEADERS += \
 	"$$unrealRootPath/Engine/Plugins/VirtualProduction/TimedDataMonitor/Source/TimedDataMonitorEditor/Private/TimedDataMonitorEditorStyle.h" \
 	"$$unrealRootPath/Engine/Plugins/XGEController/Source/Public/XGEControllerModule.h" \
 	"$$GPE230_AndrewLongRootPath/Source/GPE230_AndrewLong/GPE230_AndrewLong.h" \
+	"$$GPE230_AndrewLongRootPath/Source/GPE230_AndrewLong/HealthComponent.h" \
 	"$$GPE230_AndrewLongRootPath/Source/GPE230_AndrewLong/LockAndKey.h" \
 	"$$GPE230_AndrewLongRootPath/Source/GPE230_AndrewLong/MazeCharacter.h" \
 	"$$GPE230_AndrewLongRootPath/Source/GPE230_AndrewLong/MazeGameMode.h" \

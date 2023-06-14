@@ -19,6 +19,7 @@ public:
 	
 protected:
 	/// <summary> Current health of the character. </summary>
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 	float _currentHealth;
 
 	/* Methods */

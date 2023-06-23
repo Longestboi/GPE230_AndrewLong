@@ -21,7 +21,7 @@ void AMazeCharacter::Tick(float DeltaTime) {
 	Super::Tick(DeltaTime);
 }
 
-// Called to bind functionality to input.
+/// <summary>Called to bind functionality to input.</summary>
 void AMazeCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent) {
 	// Do input of inherited class. 
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
@@ -32,21 +32,22 @@ void AMazeCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 	PlayerInputComponent->BindAxis(TEXT("Turn"), this, &AMazeCharacter::Turn);
 }
 
-// Move forward/backward callback function.
+/// <summary>Move forward/backward callback function.</summary>
 void AMazeCharacter::MoveForward(float value) {
 	AddMovementInput(GetActorForwardVector(), value * moveSpeed);
 }
 
-// Move right/left callback function.
+/// <summary>Move right/left callback function.</summary>
 void AMazeCharacter::MoveRight(float value) {
 	AddMovementInput(GetActorRightVector(), value * moveSpeed);
 }
 
-// Rotation callback function.
+/// <summary>Rotation callback function.</summary>
 void AMazeCharacter::Turn(float value) {
 	AddControllerYawInput(value * turnSpeed);
 }
 
+/// <summary>Unused, likely to be removed.</summary>
 void AMazeCharacter::Die() {
 	UE_LOG(LogTemp, Log, TEXT("Player is DEAD"));
 }

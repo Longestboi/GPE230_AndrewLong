@@ -13,14 +13,23 @@ class GPE230_ANDREWLONG_API UHealthComponent : public UActorComponent {
 	/* Vars */
 	
 public:
-	/// <summary> Maximum starting health for the character. </summary>
+	/// <summary>Maximum starting health for the character.</summary>
 	UPROPERTY(EditAnywhere)
 	float maxHealth;
 	
 protected:
-	/// <summary> Current health of the character. </summary>
+	/// <summary>Current health of the character.</summary>
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 	float _currentHealth;
+
+private:
+	/// <summary>Animation to do on death.</summary>
+	UPROPERTY(EditAnywhere)
+	UAnimSequence* _deathAnim;
+	
+	// is dead flag
+	bool _isDead = false;
+
 
 	/* Methods */
 public:	
@@ -35,9 +44,10 @@ public:
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
-		
+	// Custom TakeDamage delagate function 
 	UFUNCTION()
-	virtual void TakeDamage(AActor *DamagedActor, float Damage, const UDamageType *DamageType, AController *InstigateBy, AActor * DamageCauser);
+	virtual void TakeDamage(AActor* DamagedActor, float Damage, const class UDamageType* DamageType, class AController* InstigatedBy, AActor* DamageCauser);
 	
+	// The death sequence of the parent actor
 	virtual void Die();
 };

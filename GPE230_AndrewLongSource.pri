@@ -14502,5 +14502,6 @@ SOURCES += \
 	"$$GPE230_AndrewLongRootPath/Source/GPE230_AndrewLong/LockAndKey.cpp" \
 	"$$GPE230_AndrewLongRootPath/Source/GPE230_AndrewLong/MazeCharacter.cpp" \
 	"$$GPE230_AndrewLongRootPath/Source/GPE230_AndrewLong/MazeGameMode.cpp" \
+	"$$GPE230_AndrewLongRootPath/Source/GPE230_AndrewLong/NPCEnemy.cpp" \
  
 

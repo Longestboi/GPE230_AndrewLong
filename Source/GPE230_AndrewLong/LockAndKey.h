@@ -17,6 +17,7 @@ class GPE230_ANDREWLONG_API ALockAndKey : public ATriggerBox
 public:
 	ALockAndKey();
 	
+	// Check if the overlapping actor can open the door
 	UFUNCTION()
 	void CheckActorType(class AActor* OverlappedActor, class AActor* OtherActor);
 	

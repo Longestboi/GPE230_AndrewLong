@@ -31,7 +31,8 @@ private:
 	float moveSpeed;
 	UPROPERTY(EditAnywhere)
 	float turnSpeed;
-
+	
+	// Player input handlers
 	void MoveForward(float value);
 	void MoveRight(float value);
 	void Turn(float value);

@@ -13,9 +13,7 @@ void ALockAndKey::CheckActorType(
 	class AActor* OtherActor
 ) {
 	// Open the door if the colliding object is a maze character
-	if (OtherActor->IsA(AMazeCharacter::StaticClass())) {
-		this->OpenDoor();
-	}
+	if (OtherActor->IsA(AMazeCharacter::StaticClass())) this->OpenDoor();
 }
 
 void ALockAndKey::OpenDoor() {

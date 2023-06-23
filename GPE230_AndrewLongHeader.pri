@@ -19054,5 +19054,6 @@ HEADERS += \
 	"$$GPE230_AndrewLongRootPath/Source/GPE230_AndrewLong/LockAndKey.h" \
 	"$$GPE230_AndrewLongRootPath/Source/GPE230_AndrewLong/MazeCharacter.h" \
 	"$$GPE230_AndrewLongRootPath/Source/GPE230_AndrewLong/MazeGameMode.h" \
+	"$$GPE230_AndrewLongRootPath/Source/GPE230_AndrewLong/NPCEnemy.h" \
  
 

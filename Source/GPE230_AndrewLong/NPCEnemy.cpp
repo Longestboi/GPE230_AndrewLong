@@ -64,13 +64,17 @@ void ANPCEnemy::DetectHit() {
 	}
 	
 	// Loop through all hits
-	// If I'm not wrong, this code has a bug in it, if a hittable actor is detected, every other will not be hit because of the guard clause.
+	// If I'm not wrong, this code has a bug in it, if a hittable actor is hit,
+	// every other hittable actor will not be hit because of the guard clause.
 	for (const FHitResult &HitResult : HitArray) {
 		if (!canDamage) continue;
 
 		FString hitActorName = HitResult.GetActor()->GetName();
 
-		UE_LOG(LogTemp, Log, TEXT("NPCEnemy \"%s\" hit actor, \"%s\" for %f damage."), *ownerName, *hitActorName, _HitDamage);
+		UE_LOG(LogTemp, Log,
+			TEXT("NPCEnemy \"%s\" hit actor, \"%s\" for %f damage."), 
+				*ownerName, *hitActorName, _HitDamage
+		);
 
 		// Apply damage to hit actor
 		UGameplayStatics::ApplyDamage(HitResult.GetActor(), _HitDamage, GetController(), this, UDamageType::StaticClass());

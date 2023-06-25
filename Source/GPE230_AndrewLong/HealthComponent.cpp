@@ -3,6 +3,7 @@
 
 #include "HealthComponent.h"
 #include "GameFramework/Character.h"
+#include "MazeCharacter.h"
 
 
 // Sets default values for this component's properties
@@ -52,5 +53,8 @@ void UHealthComponent::Die() {
 	
 	// Play animation on owner
 	Cast<ACharacter>(GetOwner())->GetMesh()->PlayAnimation(_deathAnim, false);
+
+	Cast<AMazeCharacter>(GetOwner())->setMovementSpeed(0);
+	Cast<AMazeCharacter>(GetOwner())->setTurnSpeed(0);
 };
 

@@ -21,6 +21,9 @@ public:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 	virtual void Die();
 
+	void setMovementSpeed(float mSpeed) { this->moveSpeed = mSpeed; }
+	void setTurnSpeed(float tSpeed) { this->turnSpeed = tSpeed; }
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

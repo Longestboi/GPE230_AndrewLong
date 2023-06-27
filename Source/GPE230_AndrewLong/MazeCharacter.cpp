@@ -51,3 +51,19 @@ void AMazeCharacter::Turn(float value) {
 void AMazeCharacter::Die() {
 	UE_LOG(LogTemp, Log, TEXT("Player is DEAD"));
 }
+
+void AMazeCharacter::ActivateStunParticleSystem() {
+	if (!_stunSystem) {
+		UE_LOG(LogTemp, Error, TEXT("Player attempted to use the stun ability, but no template was not found."));
+		return;
+	}
+	
+	USceneComponent* AttachComp = GetDefaultAttachComponent();
+	
+	UNiagaraComponent* NiagaraComp = UNiagaraFunctionLibrary::SpawnSystemAttached(
+		_stunSystem, AttachComp, NAME_None, FVector(0),
+		FRotator(0), EAttachLocation::Type::KeepRelativeOffset, true
+	);
+	
+	NiagaraComp->Activate();
+}

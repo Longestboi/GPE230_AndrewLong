@@ -4,6 +4,10 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+
+#include "NiagaraFunctionLibrary.h"
+#include "NiagaraComponent.h"
+
 #include "MazeCharacter.generated.h"
 
 UCLASS()
@@ -34,9 +38,13 @@ private:
 	float moveSpeed;
 	UPROPERTY(EditAnywhere)
 	float turnSpeed;
+	UPROPERTY(EditAnywhere)
+	UNiagaraSystem* _stunSystem;
 	
 	// Player input handlers
 	void MoveForward(float value);
 	void MoveRight(float value);
 	void Turn(float value);
+	UFUNCTION(BlueprintCallable)
+	void ActivateStunParticleSystem();
 };

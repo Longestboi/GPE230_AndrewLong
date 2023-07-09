@@ -48,6 +48,12 @@ public:
 	UFUNCTION()
 	virtual void TakeDamage(AActor* DamagedActor, float Damage, const class UDamageType* DamageType, class AController* InstigatedBy, AActor* DamageCauser);
 	
+	UFUNCTION(BlueprintCallable)
+	void SetHealth(int h);
+	UFUNCTION(BlueprintCallable)
+	int GetHealth();
+	
 	// The death sequence of the parent actor
+	UFUNCTION(BlueprintCallable)
 	virtual void Die();
 };

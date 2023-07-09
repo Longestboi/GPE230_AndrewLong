@@ -46,6 +46,16 @@ void UHealthComponent::TakeDamage(AActor* DamagedActor, float Damage, const clas
 	return;
 }
 
+/// <summary> Health setter </summary>
+void UHealthComponent::SetHealth(int h) {
+	this->_currentHealth = float(h);
+}
+
+/// <summary> Health getter </summary>
+int UHealthComponent::GetHealth(void) {
+	return int(this->_currentHealth);
+}
+
 /// <summary>The death sequence of the parent actor</summary>
 void UHealthComponent::Die() {
 	_isDead = true;

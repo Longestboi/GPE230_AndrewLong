@@ -49,7 +49,7 @@ void ANPCEnemy::DetectHit() {
 	const bool Hit = UKismetSystemLibrary::SphereTraceMulti(
 		GetWorld(), PunchLocation, PunchLocation, _TraceRadius,
 		UEngineTypes::ConvertToTraceType(ECC_Camera), false,
-		ActorsToIgnore, EDrawDebugTrace::ForDuration, HitArray,
+		ActorsToIgnore, EDrawDebugTrace::None, HitArray,
 		true, FLinearColor::Red, FLinearColor::Green, 0.5f
 	);
 

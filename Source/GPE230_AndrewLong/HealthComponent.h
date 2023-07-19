@@ -14,7 +14,7 @@ class GPE230_ANDREWLONG_API UHealthComponent : public UActorComponent {
 	
 public:
 	/// <summary>Maximum starting health for the character.</summary>
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
 	float maxHealth;
 	
 protected:

@@ -1,7 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#include "GameFramework/DefaultPawn.h"
 #include "MazeCharacter.h"
+#include "GameFramework/DefaultPawn.h"
 
 // Sets default values
 AMazeCharacter::AMazeCharacter() {
